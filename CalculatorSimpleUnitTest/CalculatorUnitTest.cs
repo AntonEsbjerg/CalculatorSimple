@@ -2,8 +2,6 @@ using System;
 using NUnit.Framework;
 using CalculatorSimple;
 
-;
-
 namespace CalculatorSimpleUnitTest
 {
     [TestFixture]
