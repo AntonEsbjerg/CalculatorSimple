@@ -17,7 +17,7 @@ namespace CalculatorSimpleUnitTest
 
         [TestCase(2,2,4)]
         [TestCase(0,1,1)]
-        [TestCase(3,3,6)]
+        [TestCase(3,3,5)]
         [Category("AddSubtractTests")]
         public void AddTest(double i1, double i2, double o1)
         {
