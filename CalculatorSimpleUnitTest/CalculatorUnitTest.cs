@@ -31,6 +31,7 @@ namespace CalculatorSimpleUnitTest
         }
         [TestCase(2, 2, 4)]
         [TestCase(0, 1, 0)]
+        [TestCase(3,2,6)]
         public void MultiplyTest(double i1, double i2, double o1)
         {
             Assert.That(uut.Multiply(i1, i2), Is.EqualTo(o1));
