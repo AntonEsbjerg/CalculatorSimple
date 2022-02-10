@@ -13,6 +13,7 @@ namespace CalculatorSimpleUnitTest
         public void SetUp()
         {
             uut = new Calculator();
+            uut.Clear();
         }
 
         [TestCase(2,2,4)]

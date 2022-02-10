@@ -71,6 +71,10 @@ namespace CalculatorSimple
             return result;
         }
 
+        public void Clear()
+        {
+            Accumulator = 0;
+        }
 
 
     }
