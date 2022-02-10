@@ -55,6 +55,16 @@ namespace CalculatorSimpleUnitTest
             Assert.That(uut.Power(i1, i2), Is.EqualTo(o1));
         }
 
+        [TestCase(-2, 2.5, "Result is complex Number")]
+        [Category("ComplexOperationTests")]
+        public void PowerComplexTest(double i1, double i2, string o1)
+        {
+            var ex =
+            Assert.Catch<ArgumentException>(() => uut.Power(i1, i2));
+
+            Assert.That(ex.Message, Is.EqualTo(o1));
+        }
+
         [TestCase(3, 2, 1.5)]
         [TestCase(0, 1, 0)]
         [TestCase(10, 2, 5)]
@@ -124,6 +134,16 @@ namespace CalculatorSimpleUnitTest
             Assert.That(uut.Divide(i2), Is.EqualTo(o1));
         }
 
+        [TestCase(-2, 2.5, "Result is complex Number")]
+        [Category("ComplexOperationTests")]
+        public void AccumulationPowerComplexTest(double i1, double i2, string o1)
+        {
+            uut.Add(i1);
+            var ex =
+            Assert.Catch<ArgumentException>(() => uut.Power(i2));
+
+            Assert.That(ex.Message, Is.EqualTo(o1));
+        }
 
         [TestCase(2)]
         [TestCase(0)]
