@@ -40,6 +40,7 @@ namespace CalculatorSimple
             var result = Accumulator + b;
             Accumulator = result;
             return result;
+            
         }
 
         public double Subtract(double b)
