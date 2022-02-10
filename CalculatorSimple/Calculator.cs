@@ -6,6 +6,9 @@ namespace CalculatorSimple
 {
     public class Calculator
     {
+        public double Accumulator { get; private set; }
+
+
         public double Add(double a, double b)
         {
             var result = a + b;
@@ -26,6 +29,35 @@ namespace CalculatorSimple
             var result = Math.Pow(x, exp);
             return result;
         }
+        public double Add(double b)
+        {
+            var result = Accumulator + b;
+            return result;
+            Accumulator = result;
+        public double Subtract(double b)
+        }
+        {
+            var result = Accumulator - b;
+            Accumulator = result;
+        }
+            return result;
+        public double Multiply(double b)
+            var result = Accumulator * b;
+        {
+            Accumulator = result;
+            return result;
+        }
+        public double Divide(double divisor)
+        {
+            return 0;
+        }
+        public double Power(double exp)
+        {
+            var result = Math.Pow(Accumulator, exp);
+            Accumulator = result;
+            return result;
+        }
+
 
         public double Divide(double a, double b)
         {
