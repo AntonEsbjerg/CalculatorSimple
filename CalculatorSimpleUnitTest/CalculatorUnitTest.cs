@@ -53,5 +53,12 @@ namespace CalculatorSimpleUnitTest
         {
             Assert.That(uut.Divide(i1, i2), Is.EqualTo(o1));
         }
+
+        [Test]
+        public void TestAccumulator()
+        {
+            
+
+        }
     }
 }
