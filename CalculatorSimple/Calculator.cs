@@ -30,30 +30,29 @@ namespace CalculatorSimple
             return result;
         }
 
-
-        
-
         public double Add(double b)
         {
             var result = Accumulator + b;
-            Accumulator = result;
             return result;
+            Accumulator = result;
         }
+
         public double Subtract(double b)
         {
-            var result = Accumulator - b;
+        var result = Accumulator - b;
             Accumulator = result;
-            return result;
+        return result;
         }
+            
         public double Multiply(double b)
         {
             var result = Accumulator * b;
+        
             Accumulator = result;
             return result;
         }
         public double Divide(double divisor)
         {
-
             return 0;
         }
         public double Power(double exp)
@@ -63,5 +62,11 @@ namespace CalculatorSimple
             return result;
         }
 
+
+        public double Divide(double a, double b)
+        {
+            var result = a / b;
+            return result;
+        }
     }
 }
