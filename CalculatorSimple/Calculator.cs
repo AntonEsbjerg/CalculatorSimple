@@ -26,5 +26,11 @@ namespace CalculatorSimple
             var result = Math.Pow(x, exp);
             return result;
         }
+
+        public double Divide(double a, double b)
+        {
+            var result = a / b;
+            return result;
+        }
     }
 }
