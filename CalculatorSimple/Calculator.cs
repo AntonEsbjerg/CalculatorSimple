@@ -33,8 +33,8 @@ namespace CalculatorSimple
         public double Add(double b)
         {
             var result = Accumulator + b;
-            return result;
             Accumulator = result;
+            return result;
         }
 
         public double Subtract(double b)
