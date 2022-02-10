@@ -29,6 +29,11 @@ namespace CalculatorSimple
             var result = Math.Pow(x, exp);
             return result;
         }
+        public double Divide(double a, double b)
+        {
+            var result = a / b;
+            return result;
+        }
 
         public double Add(double b)
         {
@@ -51,10 +56,13 @@ namespace CalculatorSimple
             Accumulator = result;
             return result;
         }
-        public double Divide(double divisor)
+        public double Divide(double b)
         {
-            return 0;
+            var result = Accumulator / b;
+            Accumulator = result;
+            return result;
         }
+
         public double Power(double exp)
         {
             var result = Math.Pow(Accumulator, exp);
@@ -63,10 +71,6 @@ namespace CalculatorSimple
         }
 
 
-        public double Divide(double a, double b)
-        {
-            var result = a / b;
-            return result;
-        }
+
     }
 }
