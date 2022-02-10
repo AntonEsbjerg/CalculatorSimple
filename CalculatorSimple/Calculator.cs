@@ -29,21 +29,25 @@ namespace CalculatorSimple
             var result = Math.Pow(x, exp);
             return result;
         }
+
         public double Add(double b)
         {
             var result = Accumulator + b;
             return result;
             Accumulator = result;
+        }
+
         public double Subtract(double b)
-        }
         {
-            var result = Accumulator - b;
+        var result = Accumulator - b;
             Accumulator = result;
+        return result;
         }
-            return result;
+            
         public double Multiply(double b)
-            var result = Accumulator * b;
         {
+            var result = Accumulator * b;
+        
             Accumulator = result;
             return result;
         }
