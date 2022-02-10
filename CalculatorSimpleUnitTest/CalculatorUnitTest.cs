@@ -54,5 +54,17 @@ namespace CalculatorSimpleUnitTest
         {
             Assert.That(uut.Divide(i1, i2), Is.EqualTo(o1));
         }
+
+
+
+        [TestCase(2, 2, 4)]
+        [TestCase(0, 1, 1)]
+        [TestCase(3, 3, 6)]
+        [Category("SimpleOperationTests")]
+        public void AccumulatorAddTest(double i1, double i2, double o1)
+        {
+            uut.Add(i1);
+            Assert.That(uut.Add(i2), Is.EqualTo(o1));
+        }
     }
 }
