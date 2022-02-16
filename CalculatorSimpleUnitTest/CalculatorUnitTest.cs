@@ -75,6 +75,7 @@ namespace CalculatorSimpleUnitTest
             Assert.That(uut.Divide(i1, i2), Is.EqualTo(o1));
         }
 
+<<<<<<< HEAD
 
 
         [TestCase(2, 2, 4)]
@@ -180,5 +181,13 @@ namespace CalculatorSimpleUnitTest
         }
 
 
+=======
+        [Test]
+        public void TestAccumulator()
+        {
+            
+
+        }
+>>>>>>> JNK-006-Test-Accumulator
     }
 }
