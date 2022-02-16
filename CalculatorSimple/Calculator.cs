@@ -27,6 +27,10 @@ namespace CalculatorSimple
         public double Power(double x, double exp)
         {
             var result = Math.Pow(x, exp);
+            if (double.IsNaN(result))
+            {
+                throw new ArgumentException("Result is complex Number");
+            }
             return result;
         }
         public double Divide(double a, double b)
@@ -67,6 +71,10 @@ namespace CalculatorSimple
         public double Power(double exp)
         {
             var result = Math.Pow(Accumulator, exp);
+            if (double.IsNaN(result))
+            {
+                throw new ArgumentException("Result is complex Number");
+            }
             Accumulator = result;
             return result;
         }
