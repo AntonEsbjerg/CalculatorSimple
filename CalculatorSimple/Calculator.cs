@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq.Expressions;
 using System.Xml.XPath;
 using Math = System.Math;
 
@@ -29,7 +30,9 @@ namespace CalculatorSimple
             var result = Math.Pow(x, exp);
             if (double.IsNaN(result))
             {
-                throw new ArgumentException("Result is complex Number");
+               
+                    throw new ArgumentException("Result is complex Number");
+
             }
             return result;
         }

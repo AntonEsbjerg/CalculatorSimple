@@ -6,12 +6,7 @@ namespace CalculatorSimple
     {
         static void Main(string[] args)
         {
-            Calculator C = new Calculator();
-
-            var i = 
-            C.Power(-2, 2.5);
-
-            Console.Read();
+           
         }
     }
 }
